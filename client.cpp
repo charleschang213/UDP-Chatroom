@@ -56,8 +56,8 @@ void run_client(const char *host, const char *port, const char *username)
     memcpy(&addr.sin_addr.s_addr, serv->h_addr, serv->h_length);
 
     struct timeval tv;
-    tv.tv_sec = 0;
-    tv.tv_usec = SOCKET_TIMEOUT;
+    tv.tv_sec = SOCKET_TIMEOUT;
+    tv.tv_usec = 0;
     setsockopt(serverSocket, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
 
     pthread_create(threads + 0, NULL, &write_to_server, (void *)username);

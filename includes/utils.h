@@ -24,7 +24,7 @@
 
 #define MAX_CLIENTS 8
 #define MSG_SIZE (256)
-#define SOCKET_TIMEOUT 2000
+#define SOCKET_TIMEOUT 10
 
 #define JOIN_HEADER "JOIN:"
 #define MSG_HEADER "MESG:"
