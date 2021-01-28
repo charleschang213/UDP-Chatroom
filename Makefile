@@ -7,13 +7,13 @@ EXES_RELEASE = $(EXE_CLIENT) $(EXE_SERVER)
 OBJS_CLIENT=$(EXE_CLIENT).o
 OBJS_SERVER=$(EXE_SERVER).o
 
-CC = g++
+CC = clang++
 INCLUDES = -I./includes
 WARNINGS = -Wall -Wextra -Werror -Wno-error=unused-parameter
 CFLAGS_DEBUG   = -O0 $(WARNINGS) $(INCLUDES) -g -std=c++11 -c -MMD -MP -D_GNU_SOURCE -pthread
 CFLAGS_RELEASE = -O2 $(WARNINGS) $(INCLUDES) -g -std=c++11 -c -MMD -MP -D_GNU_SOURCE -pthread
 
-LD = g++
+LD = clang++
 LDFLAGS = -pthread
 
 .PHONY: all
