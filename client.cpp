@@ -86,7 +86,7 @@ void thread_cancellation_handler(void *arg)
     char *name = a->name;
     if (*buffer)
     {
-        free(*buffer);
+        delete []*buffer;
         *buffer = NULL;
     }
 
