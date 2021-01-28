@@ -4,6 +4,8 @@ This repository stores code of a simple chatroom program based on the applicatio
 ## Features
 The program sets a simple chatroom within a server machine so that the diffrent clients can access through the specified port to chat with each other. Once the server will receive the message once a client gets into the room, speaks and leaves the room, and broadcast the message to all other clients.
 
+![](Pictures/Demo.gif)
+
 
 
 ## Installation
@@ -25,3 +27,8 @@ So that the chatroom hill be hosted on specific port.
 ./client <server-address> <server-port> <username>
 ```
 And into will get into the chatroom. In the chatroom the client user can just type to speak.
+
+## Current Issues/Future Improvements
++ A more interactive chat window (separated input/output, support for line changing etc.)
++ Adaptation to the connectionless feature of UDP (eg. check if sombody is off line)
++ Fix some possible problems under bad network
