@@ -196,8 +196,7 @@ int main(int argc, char **argv)
 
     if (argc < 3 || argc > 4)
     {
-        fprintf(stderr, "Usage: %s <address> <port> <username>\n",
-                argv[0]);
+        std::cerr << "Usage: " << argv[0] << " <address> <port> <username>" << std::endl;
         exit(1);
     }
 
